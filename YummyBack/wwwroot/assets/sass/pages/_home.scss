@@ -1,0 +1,364 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+//Navbar css start
+.navbar {
+  padding: 20px 0px;
+}
+
+.navbar-brand {
+  font-weight: bolder !important;
+  font-size: 28px !important;
+}
+
+.book-table {
+  border-radius: 20px;
+  padding: 7px 25px;
+}
+
+.nav-item {
+  a {
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+//Navbar css end
+
+//Welcome css start
+#welcome {
+  background-color: whitesmoke;
+}
+
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px 0px;
+  .welcome-text-title {
+    font-size: 56px;
+  }
+  .welcome-book {
+    border-radius: 20px;
+    padding: 8px 25px;
+  }
+}
+
+.welcome-image {
+  margin: 50px 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.welcome-btn {
+  gap: 30px;
+}
+
+.welcome-watch {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+  gap: 5px;
+  i {
+    color: red;
+    font-size: 26px;
+  }
+  p {
+    margin: 0;
+    color: black;
+    transition-duration: 0.3s;
+  }
+  &:hover {
+    p {
+      color: red;
+    }
+  }
+}
+
+.red {
+  color: red;
+}
+
+@media screen and (max-width: 992px) {
+  .welcome-image {
+    justify-content: center;
+    img {
+      min-width: min-content;
+      aspect-ratio: 1/1;
+    }
+  }
+  .welcome-text {
+    p.welcome-text-title {
+      text-align: center;
+    }
+    p.welcome-text-desc {
+      text-align: center;
+    }
+  }
+  .welcome-btn {
+    justify-content: center;
+  }
+}
+
+//Welcome css end
+
+.menu-desc {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+  padding-bottom: 20px;
+  div {
+    display: inline-block;
+    text-align: center;
+    font-size: 28px;
+  }
+}
+
+.pale {
+  color: #7f7f90;
+  font-size: 13px;
+}
+
+.menu-filter {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  .filter-item {
+    font-size: 18px;
+    padding: 2px;
+    text-decoration: none;
+    border-bottom: #7f7f90 2px solid;
+    transition-duration: 0.3s;
+    &:hover {
+      color: red;
+      border-bottom: whitesmoke 2px solid;
+    }
+  }
+}
+
+.filter-item {
+  color: #37373f;
+}
+
+.active {
+  color: red;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  p {
+    text-align: center;
+  }
+  .category {
+    font-size: 25px;
+  }
+}
+
+.foods-bottom {
+  margin-top: 40px;
+}
+
+.food-item {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 300px;
+    text-align: center;
+  }
+  .food-name {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 22px;
+    margin-bottom: 0px;
+  }
+  .food-desc {
+    text-align: center;
+    color: grey;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .food-price {
+    color: rgb(189, 9, 9);
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+//Book form css start
+
+#book-form{
+  padding: 30px 0px;
+}
+
+.form-header {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  p {
+    text-align: center;
+  }
+  .form-title {
+    font-size: 24px;
+  }
+}
+
+.form-image {
+  img {
+    width: 100%;
+  }
+}
+
+.form-content {
+  background-color: whitesmoke;
+}
+
+.form-part{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  form{
+    display: inline-block;
+
+  }
+}
+
+.form-first-line{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  input{
+    border: #bdbcbc 1px solid;
+    padding: 10px;
+  }
+}
+
+.form-second-line{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+  input{
+    border: #bdbcbc 1px solid;
+    padding: 10px;
+  }
+}
+
+.form-third-line{
+  padding-top: 20px;
+  textarea{
+    border: #bdbcbc 1px solid;
+    width: 100%;
+    height: 20vh;
+  }
+}
+
+.form-fourth-line{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  button{
+    border-radius: 30px;
+    padding: 13px 60px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  .form-part{
+    display: block;
+    form{
+      display: block;
+      padding: 25px;
+      div{
+        display: block;
+        padding: 0;
+        input{
+          display: block;
+          margin: 10px 0px;
+          width: 100%;
+        }
+      }
+      .form-fourth-line{
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+//Book form css end
+
+//Footer css start
+footer{
+  background-color: #1f1f24;
+}
+.info{
+  border-bottom: 1px solid #37373f;
+}
+
+.info-item{
+  margin: 50px 0px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  i{
+    font-size: 24px;
+    color: white;
+  }
+  p{
+    color: white;
+    margin-bottom: 10px;
+  }
+  .info-item-title{
+    font-weight: bolder;
+  }
+}
+
+.info-links{
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+  p{
+    color: white;
+  }
+  .info-item-title{
+    font-weight: bolder;
+  }
+  .links{
+    display: flex;
+    gap: 10px;
+  }
+  .link-item{
+    border: 1px solid #cfcece;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+    i{
+      color: #cfcece;
+      padding: 10px;
+      transition-duration: 0.3s;
+    }
+    &:hover{
+      border-color: white;
+      i{
+        color: white;
+      }
+    }
+  }
+}
+
+.copyright{
+  padding: 20px 0px;
+  text-align: center;
+  color: white;
+  p{
+    margin: 0;
+    margin-top: 10px;
+  }
+}
+//Footer css end

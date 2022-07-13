@@ -1,0 +1,130 @@
+﻿@model HomeVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!--Main start-->
+<main>
+    <!-- Welcome section start-->
+    <section id="welcome">
+        <div class="container">
+            <div class="row">
+                <div class="welcome-text col-12 col-lg-6">
+                    <p class="welcome-text-title">
+                        Enjoy Your Healthy
+                        Delicious Food
+                    </p>
+                    <p class="welcome-text-desc">
+                        Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae
+                        cumque eum quaerat.
+                    </p>
+                    <div class="d-flex welcome-btn">
+                        <a href="#" class="btn btn-danger  welcome-book">
+                            Book a Table
+                        </a>
+                        <a href="#" class="welcome-watch">
+                            <i class="fa-regular fa-circle-play"></i>
+                            <p>Watch Video</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="welcome-image col-12 col-lg-6">
+                    <img src="~/assets/img/hero-img.png" width="451" height="451">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Welcome section end-->
+    <!--Yummy menu section start-->
+    <section id="yummy-menu">
+        <div class="container">
+            <div class="menu-desc">
+                <div>
+                    <p class="pale">OUR MENU</p>
+                    <p class="menu-desc-title">
+                        Check Our <span class="red">Yummy Menu</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="menu-filter">
+                <a href="#" class="filter-item">Starters</a>
+                <a href="#" class="filter-item">Breakfast</a>
+                <a href="#" class="filter-item">Lunch</a>
+                <a href="#" class="filter-item">Dinner</a>
+            </div>
+
+            <div class="menu-title">
+                <div>
+                    <p class="pale">MENU</p>
+                    <p class="red category">Starters</p>
+                </div>
+            </div>
+
+            <div class="menu-foods">
+                <div class="foods-top">
+                    <div class="row">
+                        @foreach (var item in Model.Products)
+                        {
+                             <div class="food-item col-12 col-lg-4">
+                            <div>
+                                @foreach (var image in @item.ProductImages)
+                               {
+                                   <img src="~/assets/img/foods/@image.Url" class="food-image">
+                               }
+                                <p class="food-name">@item.Name</p>
+                                <p class="food-desc">
+                                    @item.Description
+                                </p>
+                                <p class="food-price">$@item.Price</p>
+                            </div>
+                        </div>
+                        }
+
+                    </div>
+                </div>
+    </section>
+    <!--Yummy menu section end-->
+    <!-- Book forum start-->
+    <section id="book-form">
+        <div class="container">
+            <div class="form-header">
+                <div>
+                    <p class="pale">BOOK A TABLE</p>
+                    <p class="form-title">
+                        BOOK <span class="red">YOUR STAY</span> WITH US
+                    </p>
+                </div>
+            </div>
+            <div class="form-content">
+                <div class="row">
+                    <div class="form-image col-12 col-xl-4">
+                        <img src="~/assets/img/form/reservation.jpg">
+                    </div>
+                    <div class="form-part col-12 col-xl-8">
+                        <form>
+                            <div class="form-first-line">
+                                <input type="text" placeholder="Your Name">
+                                <input type="email" placeholder="Your Email">
+                                <input type="phone" placeholder="Your Phone">
+                            </div>
+                            <div class="form-second-line">
+                                <input type="text" placeholder="Date">
+                                <input type="email" placeholder="Time">
+                                <input type="phone" placeholder="# of people">
+                            </div>
+                            <div class="form-third-line">
+                                <textarea placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-fourth-line">
+                                <button type="submit" class="btn btn-danger">Book a Table</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Book forum end-->
+</main>
+<!--Main end-->

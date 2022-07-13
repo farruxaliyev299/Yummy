@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Yummy</title>
+</head>
+
+<body>
+    <!--Header start-->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex justify-content-center" href="#">Yummy<span class="red">.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Chefs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Drop Down
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Drop Down1</a></li>
+                                <li><a class="dropdown-item dropend" href="#">Deep Drop Down</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn btn-danger book-table">Book a Table</a>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <!--Header end-->
+
+    <!--Main start-->
+    <main>
+        <!-- Welcome section start-->
+        <section id="welcome">
+            <div class="container">
+                <div class="row">
+                    <div class="welcome-text col-12 col-lg-6">
+                        <p class="welcome-text-title">
+                            Enjoy Your Healthy
+                            Delicious Food
+                        </p>
+                        <p class="welcome-text-desc">
+                            Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae
+                            cumque eum quaerat.
+                        </p>
+                        <div class="d-flex welcome-btn">
+                            <a href="#" class="btn btn-danger  welcome-book">
+                                Book a Table
+                            </a>
+                            <a href="#" class="welcome-watch">
+                                <i class="fa-regular fa-circle-play"></i>
+                                <p>Watch Video</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="welcome-image col-12 col-lg-6">
+                        <img src="./assets/img/hero-img.png" width="451" height="451">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Welcome section end-->
+
+        <!--Yummy menu section start-->
+        <section id="yummy-menu">
+            <div class="container">
+                <div class="menu-desc">
+                    <div>
+                        <p class="pale">OUR MENU</p>
+                        <p class="menu-desc-title">
+                            Check Our <span class="red">Yummy Menu</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="menu-filter">
+                    <a href="#" class="filter-item">Starters</a>
+                    <a href="#" class="filter-item">Breakfast</a>
+                    <a href="#" class="filter-item">Lunch</a>
+                    <a href="#" class="filter-item">Dinner</a>
+                </div>
+
+                <div class="menu-title">
+                    <div>
+                        <p class="pale">MENU</p>
+                        <p class="red category">Starters</p>
+                    </div>
+                </div>
+
+                <div class="menu-foods">
+                    <div class="foods-top">
+                        <div class="row">
+                            <div class="food-item col-12 col-lg-4">
+                                <div>
+                                    <img src="/assets/img/foods/menu-item-1.png" class="food-image">
+                                    <p class="food-name">Magnam Tiste</p>
+                                    <p class="food-desc">
+                                        Lorem, deren, trataro, filede, nerada
+                                    </p>
+                                    <p class="food-price">$5.95</p>
+                                </div>
+                            </div>
+                            <div class="food-item col-12 col-lg-4">
+                                <div>
+                                    <img src="/assets/img/foods/menu-item-2.png" class="food-image">
+                                    <p class="food-name">Aut Luia</p>
+                                    <p class="food-desc">
+                                        Lorem, deren, trataro, filede, nerada
+                                    </p>
+                                    <p class="food-price">$14.95</p>
+                                </div>
+                            </div>
+                            <div class="food-item col-12 col-lg-4">
+                                <div>
+                                    <img src="/assets/img/foods/menu-item-3.png" class="food-image">
+                                    <p class="food-name">Est Eligendi</p>
+                                    <p class="food-desc">
+                                        Lorem, deren, trataro, filede, nerada
+                                    </p>
+                                    <p class="food-price">$8.95</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foods-bottom">
+                        <div class="row">
+                            <div class="food-item col-12 col-lg-4">
+                                <div>
+                                    <img src="/assets/img/foods/menu-item-4.png" class="food-image">
+                                    <p class="food-name">Magnam Tiste</p>
+                                    <p class="food-desc">
+                                        Lorem, deren, trataro, filede, nerada
+                                    </p>
+                                    <p class="food-price">$5.95</p>
+                                </div>
+                            </div>
+                            <div class="food-item col-12 col-lg-4">
+                                <div>
+                                    <img src="/assets/img/foods/menu-item-5.png" class="food-image">
+                                    <p class="food-name">Aut Luia</p>
+                                    <p class="food-desc">
+                                        Lorem, deren, trataro, filede, nerada
+                                    </p>
+                                    <p class="food-price">$14.95</p>
+                                </div>
+                            </div>
+                            <div class="food-item col-12 col-lg-4">
+                                <div>
+                                    <img src="/assets/img/foods/menu-item-6.png" class="food-image">
+                                    <p class="food-name">Est Eligendi</p>
+                                    <p class="food-desc">
+                                        Lorem, deren, trataro, filede, nerada
+                                    </p>
+                                    <p class="food-price">$8.95</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Yummy menu section end-->
+
+        <!-- Book forum start-->
+        <section id="book-form">
+            <div class="container">
+                <div class="form-header">
+                    <div>
+                        <p class="pale">BOOK A TABLE</p>
+                        <p class="form-title">
+                            BOOK <span class="red">YOUR STAY</span> WITH US
+                        </p>
+                    </div>
+                </div>
+                <div class="form-content">
+                    <div class="row">
+                        <div class="form-image col-12 col-xl-4">
+                            <img src="/assets/img/form/reservation.jpg">
+                        </div>
+                        <div class="form-part col-12 col-xl-8">
+                            <form>
+                                <div class="form-first-line">
+                                    <input type="text" placeholder="Your Name">
+                                    <input type="email" placeholder="Your Email">
+                                    <input type="phone" placeholder="Your Phone">
+                                </div>
+                                <div class="form-second-line">
+                                    <input type="text" placeholder="Date">
+                                    <input type="email" placeholder="Time">
+                                    <input type="phone" placeholder="# of people">
+                                </div>
+                                <div class="form-third-line">
+                                    <textarea placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-fourth-line">
+                                    <button type="submit" class="btn btn-danger">Book a Table</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Book forum end-->
+    </main>
+    <!--Main end-->
+
+    <!--Footer start-->
+    <footer>
+        <div class="container">
+            <div class="info row">
+                <div class="info-item address col-12 col-md-6 col-lg-3">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <p class="info-item-title">Address</p>
+                        <p class="info-item-desc">
+                            A108 Adam Street
+                            New York, NY 535022 - US
+                        </p>
+                    </div>
+                </div>
+                <div class="info-item address col-12 col-md-6 col-lg-3">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <p class="info-item-title">Reservations</p>
+                        <p class="info-item-desc">
+                            Phone: +1 5589 55488 55
+                            Email: info@example.com
+                        </p>
+                    </div>
+                </div>
+                <div class="info-item address col-12 col-md-6 col-lg-3">
+                    <i class="fa-regular fa-clock"></i>
+                    <div>
+                        <p class="info-item-title">Opening Hours</p>
+                        <p class="info-item-desc">
+                            Mon-Sat: 11AM - 23PM
+                            Sunday: Closed
+                        </p>
+                    </div>
+                </div>
+                <div class="info-links address col-12 col-md-6 col-lg-3">
+                    <div>
+                        <p class="info-item-title">Opening Hours</p>
+                        <div class="links">
+                            <a href="#" class="link-item">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#" class="link-item">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>    
+                            <a href="#" class="link-item">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p class="license">© Copyright Yummy. All Rights Reserved</p>
+                <p class="designer">Designed by BootstrapMade</p>
+            </div>
+        </div>
+    </footer>
+    <!--Footer end-->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="./assets/JS/menufilter.js"></script>
+</body>
+
+</html>
